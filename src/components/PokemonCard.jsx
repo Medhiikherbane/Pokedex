@@ -10,13 +10,11 @@ return ( <div className="card" >
 	)
 }
 
-PokemonCard.PropTypes = {
-	pokemon: PropTypes.arrayOf (
-		PropTypes.shape ({
+PokemonCard.propTypes = {
+		pokemon:PropTypes.shape ({
 			name: PropTypes.string.isRequired,
-			imgSrc: PropTypes.string
-		})
-	).isRequired
+			imgSrc: PropTypes.string,
+	}).isRequired,
 }      
 
 export default PokemonCard
